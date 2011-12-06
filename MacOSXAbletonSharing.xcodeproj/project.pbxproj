@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F63F1B83148E1FD4005459BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63F1B82148E1FD4005459BF /* Cocoa.framework */; };
+		F63F1B8D148E1FD4005459BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B8B148E1FD4005459BF /* InfoPlist.strings */; };
+		F63F1B8F148E1FD4005459BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F1B8E148E1FD4005459BF /* main.m */; };
+		F63F1B93148E1FD4005459BF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B91148E1FD4005459BF /* Credits.rtf */; };
+		F63F1B96148E1FD4005459BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F1B95148E1FD4005459BF /* AppDelegate.m */; };
+		F63F1B99148E1FD4005459BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B97148E1FD4005459BF /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F63F1B7E148E1FD4005459BF /* MacOSXAbletonSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSXAbletonSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63F1B82148E1FD4005459BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F63F1B85148E1FD4005459BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F63F1B86148E1FD4005459BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F63F1B87148E1FD4005459BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F63F1B8A148E1FD4005459BF /* MacOSXAbletonSharing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacOSXAbletonSharing-Info.plist"; sourceTree = "<group>"; };
+		F63F1B8C148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F63F1B8E148E1FD4005459BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F63F1B90148E1FD4005459BF /* MacOSXAbletonSharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacOSXAbletonSharing-Prefix.pch"; sourceTree = "<group>"; };
+		F63F1B92148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F63F1B94148E1FD4005459BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F63F1B95148E1FD4005459BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F63F1B98148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F63F1B7B148E1FD4005459BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63F1B83148E1FD4005459BF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F63F1B73148E1FD3005459BF = {
+			isa = PBXGroup;
+			children = (
+				F63F1B88148E1FD4005459BF /* MacOSXAbletonSharing */,
+				F63F1B81148E1FD4005459BF /* Frameworks */,
+				F63F1B7F148E1FD4005459BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F63F1B7F148E1FD4005459BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B7E148E1FD4005459BF /* MacOSXAbletonSharing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F63F1B81148E1FD4005459BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B82148E1FD4005459BF /* Cocoa.framework */,
+				F63F1B84148E1FD4005459BF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F63F1B84148E1FD4005459BF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B85148E1FD4005459BF /* AppKit.framework */,
+				F63F1B86148E1FD4005459BF /* CoreData.framework */,
+				F63F1B87148E1FD4005459BF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F63F1B88148E1FD4005459BF /* MacOSXAbletonSharing */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B94148E1FD4005459BF /* AppDelegate.h */,
+				F63F1B95148E1FD4005459BF /* AppDelegate.m */,
+				F63F1B97148E1FD4005459BF /* MainMenu.xib */,
+				F63F1B89148E1FD4005459BF /* Supporting Files */,
+			);
+			path = MacOSXAbletonSharing;
+			sourceTree = "<group>";
+		};
+		F63F1B89148E1FD4005459BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B8A148E1FD4005459BF /* MacOSXAbletonSharing-Info.plist */,
+				F63F1B8B148E1FD4005459BF /* InfoPlist.strings */,
+				F63F1B8E148E1FD4005459BF /* main.m */,
+				F63F1B90148E1FD4005459BF /* MacOSXAbletonSharing-Prefix.pch */,
+				F63F1B91148E1FD4005459BF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F63F1B7D148E1FD4005459BF /* MacOSXAbletonSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63F1B9C148E1FD4005459BF /* Build configuration list for PBXNativeTarget "MacOSXAbletonSharing" */;
+			buildPhases = (
+				F63F1B7A148E1FD4005459BF /* Sources */,
+				F63F1B7B148E1FD4005459BF /* Frameworks */,
+				F63F1B7C148E1FD4005459BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacOSXAbletonSharing;
+			productName = MacOSXAbletonSharing;
+			productReference = F63F1B7E148E1FD4005459BF /* MacOSXAbletonSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63F1B75148E1FD3005459BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = nxtbgthng;
+			};
+			buildConfigurationList = F63F1B78148E1FD3005459BF /* Build configuration list for PBXProject "MacOSXAbletonSharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F63F1B73148E1FD3005459BF;
+			productRefGroup = F63F1B7F148E1FD4005459BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F63F1B7D148E1FD4005459BF /* MacOSXAbletonSharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F63F1B7C148E1FD4005459BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63F1B8D148E1FD4005459BF /* InfoPlist.strings in Resources */,
+				F63F1B93148E1FD4005459BF /* Credits.rtf in Resources */,
+				F63F1B99148E1FD4005459BF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F63F1B7A148E1FD4005459BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63F1B8F148E1FD4005459BF /* main.m in Sources */,
+				F63F1B96148E1FD4005459BF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F63F1B8B148E1FD4005459BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B8C148E1FD4005459BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F63F1B91148E1FD4005459BF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B92148E1FD4005459BF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F63F1B97148E1FD4005459BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B98148E1FD4005459BF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F63F1B9A148E1FD4005459BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F63F1B9B148E1FD4005459BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F63F1B9D148E1FD4005459BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSXAbletonSharing/MacOSXAbletonSharing-Prefix.pch";
+				INFOPLIST_FILE = "MacOSXAbletonSharing/MacOSXAbletonSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F63F1B9E148E1FD4005459BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSXAbletonSharing/MacOSXAbletonSharing-Prefix.pch";
+				INFOPLIST_FILE = "MacOSXAbletonSharing/MacOSXAbletonSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F63F1B78148E1FD3005459BF /* Build configuration list for PBXProject "MacOSXAbletonSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63F1B9A148E1FD4005459BF /* Debug */,
+				F63F1B9B148E1FD4005459BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F63F1B9C148E1FD4005459BF /* Build configuration list for PBXNativeTarget "MacOSXAbletonSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63F1B9D148E1FD4005459BF /* Debug */,
+				F63F1B9E148E1FD4005459BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63F1B75148E1FD3005459BF /* Project object */;
+}
