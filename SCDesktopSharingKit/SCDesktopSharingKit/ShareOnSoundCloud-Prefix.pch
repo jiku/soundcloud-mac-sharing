@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SoundCloud Desktop Sharing Kit' target in the 'SoundCloud Desktop Sharing Kit' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

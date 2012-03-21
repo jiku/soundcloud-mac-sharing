@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5400967314976D2A009036D0 /* SCDesktopSharingSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5400967214976D2A009036D0 /* SCDesktopSharingSegmentedControl.m */; };
+		5400967914978936009036D0 /* NSColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5400967814978936009036D0 /* NSColor+Hex.m */; };
+		F60E0AB714A0E3E2008BECC2 /* SCDesktopSharingLinkStyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F60E0AB614A0E3E2008BECC2 /* SCDesktopSharingLinkStyleButton.m */; };
+		F61D1FCB14BEFD3F0079177A /* cloud_wbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FC314BEFD3F0079177A /* cloud_wbg.png */; };
+		F61D1FCD14BEFD3F0079177A /* service_facebook_profile_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FC514BEFD3F0079177A /* service_facebook_profile_inactive.png */; };
+		F61D1FCE14BEFD3F0079177A /* service_facebook_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FC614BEFD3F0079177A /* service_facebook_profile.png */; };
+		F61D1FD014BEFD3F0079177A /* service_tumblr.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FC814BEFD3F0079177A /* service_tumblr.png */; };
+		F61D1FD114BEFD3F0079177A /* service_twitter_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FC914BEFD3F0079177A /* service_twitter_inactive.png */; };
+		F61D1FD214BEFD3F0079177A /* service_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FCA14BEFD3F0079177A /* service_twitter.png */; };
+		F61D1FD514BEFD8D0079177A /* service_tumblr_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FD414BEFD8D0079177A /* service_tumblr_inactive.png */; };
+		F61D1FD814BEFDF20079177A /* service_facebook_page_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FD614BEFDF20079177A /* service_facebook_page_inactive.png */; };
+		F61D1FD914BEFDF20079177A /* service_facebook_page.png in Resources */ = {isa = PBXBuildFile; fileRef = F61D1FD714BEFDF20079177A /* service_facebook_page.png */; };
+		F6269B69149A528D0079BA5E /* SCDesktopSharingAvatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6269B68149A528D0079BA5E /* SCDesktopSharingAvatarImageView.m */; };
+		F62E0CC3148FB00600BE8F14 /* OAuth2Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62E0CC0148FB00600BE8F14 /* OAuth2Client.framework */; };
+		F62E0CC4148FB00600BE8F14 /* SoundCloudAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62E0CC1148FB00600BE8F14 /* SoundCloudAPI.framework */; };
+		F62E0CC7148FB03800BE8F14 /* OAuth2Client.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F62E0CC0148FB00600BE8F14 /* OAuth2Client.framework */; };
+		F62E0CC8148FB03800BE8F14 /* SoundCloudAPI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F62E0CC1148FB00600BE8F14 /* SoundCloudAPI.framework */; };
+		F62E0CCC148FB05F00BE8F14 /* JSONKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62E0CCB148FB05F00BE8F14 /* JSONKit.framework */; };
+		F62E0CDD148FB0D300BE8F14 /* JSONKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F62E0CCB148FB05F00BE8F14 /* JSONKit.framework */; };
+		F63F1B83148E1FD4005459BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63F1B82148E1FD4005459BF /* Cocoa.framework */; };
+		F63F1B8D148E1FD4005459BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B8B148E1FD4005459BF /* InfoPlist.strings */; };
+		F63F1B8F148E1FD4005459BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F1B8E148E1FD4005459BF /* main.m */; };
+		F63F1B93148E1FD4005459BF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B91148E1FD4005459BF /* Credits.rtf */; };
+		F63F1B96148E1FD4005459BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F1B95148E1FD4005459BF /* AppDelegate.m */; };
+		F63F1B99148E1FD4005459BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F1B97148E1FD4005459BF /* MainMenu.xib */; };
+		F63F1BB9148E2572005459BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63F1BB8148E2572005459BF /* Security.framework */; };
+		F6506E191490B6B600AC26AC /* SCDesktopSharingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6506E181490B6B600AC26AC /* SCDesktopSharingWindowController.m */; };
+		F65661DB14B5EE040011603E /* NSData+SC.m in Sources */ = {isa = PBXBuildFile; fileRef = F65661DA14B5EE040011603E /* NSData+SC.m */; };
+		F6711F34149220E8002BAF85 /* SCDesktopSharingWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6711F36149220E8002BAF85 /* SCDesktopSharingWindow.xib */; };
+		F6716FF8149226FE00121D02 /* SCDesktopSharingLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6716FF6149226FE00121D02 /* SCDesktopSharingLoginViewController.m */; };
+		F6786E1E14964B85005CBE68 /* default-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F6786E1D14964B85005CBE68 /* default-avatar.png */; };
+		F6AE2F2B14924631004E25A3 /* SCDesktopSharingUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AE2F2914924631004E25A3 /* SCDesktopSharingUploadViewController.m */; };
+		F6AE2F2C14924631004E25A3 /* SCDesktopSharingUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AE2F2A14924631004E25A3 /* SCDesktopSharingUploadViewController.xib */; };
+		F6AE2F5814926E7A004E25A3 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE2F5714926E7A004E25A3 /* Quartz.framework */; };
+		F6B9A01B149B892F007394FC /* PMProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B9A018149B892F007394FC /* PMProgressIndicator.m */; };
+		F6B9A020149B8BF1007394FC /* PMProgressIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B9A01F149B8BF1007394FC /* PMProgressIndicatorController.m */; };
+		F6BF1CE7148FD80A00CE255F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF1CE6148FD80A00CE255F /* WebKit.framework */; };
+		F6E44F81149A15CE00FF454A /* SCDesktopSharingClickableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E44F80149A15CE00FF454A /* SCDesktopSharingClickableImageView.m */; };
+		F6E44FB3149A4B4E00FF454A /* sc.icns in Resources */ = {isa = PBXBuildFile; fileRef = F6E44FB2149A4B4E00FF454A /* sc.icns */; };
+		F6F3ADB914C469E9004C80D8 /* IGIsolatedCookieWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F3ADB814C469E9004C80D8 /* IGIsolatedCookieWebView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F63F1BB6148E253F005459BF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F62E0CC7148FB03800BE8F14 /* OAuth2Client.framework in CopyFiles */,
+				F62E0CC8148FB03800BE8F14 /* SoundCloudAPI.framework in CopyFiles */,
+				F62E0CDD148FB0D300BE8F14 /* JSONKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5400967114976D2A009036D0 /* SCDesktopSharingSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingSegmentedControl.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		5400967214976D2A009036D0 /* SCDesktopSharingSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingSegmentedControl.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5400967714978936009036D0 /* NSColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSColor+Hex.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		5400967814978936009036D0 /* NSColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSColor+Hex.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5417D187149A0FD300A2B21E /* SCDesktopSharingLinkStyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingLinkStyleButton.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9421D4601519E4CF00ED3655 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		F60E0AB614A0E3E2008BECC2 /* SCDesktopSharingLinkStyleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingLinkStyleButton.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F61D1FC314BEFD3F0079177A /* cloud_wbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_wbg.png; sourceTree = "<group>"; };
+		F61D1FC514BEFD3F0079177A /* service_facebook_profile_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_facebook_profile_inactive.png; sourceTree = "<group>"; };
+		F61D1FC614BEFD3F0079177A /* service_facebook_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_facebook_profile.png; sourceTree = "<group>"; };
+		F61D1FC814BEFD3F0079177A /* service_tumblr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_tumblr.png; sourceTree = "<group>"; };
+		F61D1FC914BEFD3F0079177A /* service_twitter_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_twitter_inactive.png; sourceTree = "<group>"; };
+		F61D1FCA14BEFD3F0079177A /* service_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_twitter.png; sourceTree = "<group>"; };
+		F61D1FD414BEFD8D0079177A /* service_tumblr_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_tumblr_inactive.png; sourceTree = "<group>"; };
+		F61D1FD614BEFDF20079177A /* service_facebook_page_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_facebook_page_inactive.png; sourceTree = "<group>"; };
+		F61D1FD714BEFDF20079177A /* service_facebook_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_facebook_page.png; sourceTree = "<group>"; };
+		F6269B67149A528D0079BA5E /* SCDesktopSharingAvatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingAvatarImageView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6269B68149A528D0079BA5E /* SCDesktopSharingAvatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingAvatarImageView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F62E0CC0148FB00600BE8F14 /* OAuth2Client.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuth2Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62E0CC1148FB00600BE8F14 /* SoundCloudAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SoundCloudAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62E0CCB148FB05F00BE8F14 /* JSONKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSONKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62E0D6F148FBE6900BE8F14 /* SoundCloudUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SoundCloudUI.framework; path = ../CocoaSoundCloudUI/build/Release/SoundCloudUI.framework; sourceTree = "<group>"; };
+		F63F1B7E148E1FD4005459BF /* Share on SoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share on SoundCloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63F1B82148E1FD4005459BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F63F1B85148E1FD4005459BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F63F1B86148E1FD4005459BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F63F1B87148E1FD4005459BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F63F1B8A148E1FD4005459BF /* ShareToSoundCloud-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShareToSoundCloud-Info.plist"; sourceTree = "<group>"; };
+		F63F1B8C148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F63F1B8E148E1FD4005459BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F63F1B90148E1FD4005459BF /* ShareOnSoundCloud-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "ShareOnSoundCloud-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F63F1B92148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F63F1B94148E1FD4005459BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F63F1B95148E1FD4005459BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F63F1B98148E1FD4005459BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F63F1BB8148E2572005459BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F6506E171490B6B600AC26AC /* SCDesktopSharingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingWindowController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6506E181490B6B600AC26AC /* SCDesktopSharingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingWindowController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F65661D914B5EE040011603E /* NSData+SC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SC.h"; sourceTree = "<group>"; };
+		F65661DA14B5EE040011603E /* NSData+SC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SC.m"; sourceTree = "<group>"; };
+		F6711F35149220E8002BAF85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDesktopSharingWindow.xib; sourceTree = "<group>"; };
+		F6716FF5149226FE00121D02 /* SCDesktopSharingLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingLoginViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6716FF6149226FE00121D02 /* SCDesktopSharingLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingLoginViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F671700B14922CFB00121D02 /* SCDesktopSharingLoginViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingLoginViewControllerDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6786E1D14964B85005CBE68 /* default-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-avatar.png"; sourceTree = "<group>"; };
+		F6AE2F2814924631004E25A3 /* SCDesktopSharingUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingUploadViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6AE2F2914924631004E25A3 /* SCDesktopSharingUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingUploadViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F6AE2F2A14924631004E25A3 /* SCDesktopSharingUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCDesktopSharingUploadViewController.xib; sourceTree = "<group>"; };
+		F6AE2F2D149251DF004E25A3 /* SCDesktopSharingUploadViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingUploadViewControllerDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6AE2F5714926E7A004E25A3 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		F6B9A017149B892F007394FC /* PMProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProgressIndicator.h; sourceTree = "<group>"; };
+		F6B9A018149B892F007394FC /* PMProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProgressIndicator.m; sourceTree = "<group>"; };
+		F6B9A01E149B8BF1007394FC /* PMProgressIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProgressIndicatorController.h; sourceTree = "<group>"; };
+		F6B9A01F149B8BF1007394FC /* PMProgressIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProgressIndicatorController.m; sourceTree = "<group>"; };
+		F6BF1CE6148FD80A00CE255F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F6E44F7F149A15CE00FF454A /* SCDesktopSharingClickableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCDesktopSharingClickableImageView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F6E44F80149A15CE00FF454A /* SCDesktopSharingClickableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCDesktopSharingClickableImageView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F6E44FB2149A4B4E00FF454A /* sc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = sc.icns; sourceTree = "<group>"; };
+		F6F3ADB714C469E9004C80D8 /* IGIsolatedCookieWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGIsolatedCookieWebView.h; sourceTree = "<group>"; };
+		F6F3ADB814C469E9004C80D8 /* IGIsolatedCookieWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGIsolatedCookieWebView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F63F1B7B148E1FD4005459BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AE2F5814926E7A004E25A3 /* Quartz.framework in Frameworks */,
+				F6BF1CE7148FD80A00CE255F /* WebKit.framework in Frameworks */,
+				F62E0CCC148FB05F00BE8F14 /* JSONKit.framework in Frameworks */,
+				F62E0CC3148FB00600BE8F14 /* OAuth2Client.framework in Frameworks */,
+				F62E0CC4148FB00600BE8F14 /* SoundCloudAPI.framework in Frameworks */,
+				F63F1B83148E1FD4005459BF /* Cocoa.framework in Frameworks */,
+				F63F1BB9148E2572005459BF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F628510B1490E47700C89B94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F61D1FC314BEFD3F0079177A /* cloud_wbg.png */,
+				F61D1FC614BEFD3F0079177A /* service_facebook_profile.png */,
+				F61D1FC514BEFD3F0079177A /* service_facebook_profile_inactive.png */,
+				F61D1FD714BEFDF20079177A /* service_facebook_page.png */,
+				F61D1FD614BEFDF20079177A /* service_facebook_page_inactive.png */,
+				F61D1FC814BEFD3F0079177A /* service_tumblr.png */,
+				F61D1FD414BEFD8D0079177A /* service_tumblr_inactive.png */,
+				F61D1FCA14BEFD3F0079177A /* service_twitter.png */,
+				F61D1FC914BEFD3F0079177A /* service_twitter_inactive.png */,
+				F6E44FB2149A4B4E00FF454A /* sc.icns */,
+				F6786E1D14964B85005CBE68 /* default-avatar.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F63F1B73148E1FD3005459BF = {
+			isa = PBXGroup;
+			children = (
+				F63F1B88148E1FD4005459BF /* SCDesktopSharingKit */,
+				F63F1B81148E1FD4005459BF /* Frameworks */,
+				F63F1B7F148E1FD4005459BF /* Products */,
+				F628510B1490E47700C89B94 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F63F1B7F148E1FD4005459BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B7E148E1FD4005459BF /* Share on SoundCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F63F1B81148E1FD4005459BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6AE2F5714926E7A004E25A3 /* Quartz.framework */,
+				F6BF1CE6148FD80A00CE255F /* WebKit.framework */,
+				F62E0D6F148FBE6900BE8F14 /* SoundCloudUI.framework */,
+				F62E0CCB148FB05F00BE8F14 /* JSONKit.framework */,
+				F62E0CC0148FB00600BE8F14 /* OAuth2Client.framework */,
+				F62E0CC1148FB00600BE8F14 /* SoundCloudAPI.framework */,
+				F63F1BB8148E2572005459BF /* Security.framework */,
+				F63F1B82148E1FD4005459BF /* Cocoa.framework */,
+				F63F1B84148E1FD4005459BF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F63F1B84148E1FD4005459BF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B85148E1FD4005459BF /* AppKit.framework */,
+				F63F1B86148E1FD4005459BF /* CoreData.framework */,
+				F63F1B87148E1FD4005459BF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F63F1B88148E1FD4005459BF /* SCDesktopSharingKit */ = {
+			isa = PBXGroup;
+			children = (
+				9421D4601519E4CF00ED3655 /* AppConstants.h */,
+				F63F1B94148E1FD4005459BF /* AppDelegate.h */,
+				F63F1B95148E1FD4005459BF /* AppDelegate.m */,
+				F63F1B97148E1FD4005459BF /* MainMenu.xib */,
+				F6E44F96149A206A00FF454A /* Additions */,
+				F6E44F95149A205B00FF454A /* Views */,
+				F6E44F94149A204A00FF454A /* Controller */,
+				F63F1B89148E1FD4005459BF /* Supporting Files */,
+			);
+			path = SCDesktopSharingKit;
+			sourceTree = "<group>";
+		};
+		F63F1B89148E1FD4005459BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F63F1B8A148E1FD4005459BF /* ShareToSoundCloud-Info.plist */,
+				F63F1B8B148E1FD4005459BF /* InfoPlist.strings */,
+				F63F1B8E148E1FD4005459BF /* main.m */,
+				F63F1B90148E1FD4005459BF /* ShareOnSoundCloud-Prefix.pch */,
+				F63F1B91148E1FD4005459BF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E44F94149A204A00FF454A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F671700B14922CFB00121D02 /* SCDesktopSharingLoginViewControllerDelegate.h */,
+				F6716FF5149226FE00121D02 /* SCDesktopSharingLoginViewController.h */,
+				F6716FF6149226FE00121D02 /* SCDesktopSharingLoginViewController.m */,
+				F6AE2F2D149251DF004E25A3 /* SCDesktopSharingUploadViewControllerDelegate.h */,
+				F6AE2F2814924631004E25A3 /* SCDesktopSharingUploadViewController.h */,
+				F6AE2F2914924631004E25A3 /* SCDesktopSharingUploadViewController.m */,
+				F6AE2F2A14924631004E25A3 /* SCDesktopSharingUploadViewController.xib */,
+				F6506E171490B6B600AC26AC /* SCDesktopSharingWindowController.h */,
+				F6506E181490B6B600AC26AC /* SCDesktopSharingWindowController.m */,
+				F6711F36149220E8002BAF85 /* SCDesktopSharingWindow.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F6E44F95149A205B00FF454A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6B9A017149B892F007394FC /* PMProgressIndicator.h */,
+				F6B9A018149B892F007394FC /* PMProgressIndicator.m */,
+				F6B9A01E149B8BF1007394FC /* PMProgressIndicatorController.h */,
+				F6B9A01F149B8BF1007394FC /* PMProgressIndicatorController.m */,
+				5400967114976D2A009036D0 /* SCDesktopSharingSegmentedControl.h */,
+				5400967214976D2A009036D0 /* SCDesktopSharingSegmentedControl.m */,
+				F6E44F7F149A15CE00FF454A /* SCDesktopSharingClickableImageView.h */,
+				F6E44F80149A15CE00FF454A /* SCDesktopSharingClickableImageView.m */,
+				5417D187149A0FD300A2B21E /* SCDesktopSharingLinkStyleButton.h */,
+				F60E0AB614A0E3E2008BECC2 /* SCDesktopSharingLinkStyleButton.m */,
+				F6269B67149A528D0079BA5E /* SCDesktopSharingAvatarImageView.h */,
+				F6269B68149A528D0079BA5E /* SCDesktopSharingAvatarImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F6E44F96149A206A00FF454A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F6F3ADB714C469E9004C80D8 /* IGIsolatedCookieWebView.h */,
+				F6F3ADB814C469E9004C80D8 /* IGIsolatedCookieWebView.m */,
+				5400967714978936009036D0 /* NSColor+Hex.h */,
+				5400967814978936009036D0 /* NSColor+Hex.m */,
+				F65661D914B5EE040011603E /* NSData+SC.h */,
+				F65661DA14B5EE040011603E /* NSData+SC.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F63F1B7D148E1FD4005459BF /* Share on SoundCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63F1B9C148E1FD4005459BF /* Build configuration list for PBXNativeTarget "Share on SoundCloud" */;
+			buildPhases = (
+				F63F1B7A148E1FD4005459BF /* Sources */,
+				F63F1B7B148E1FD4005459BF /* Frameworks */,
+				F63F1B7C148E1FD4005459BF /* Resources */,
+				F63F1BB6148E253F005459BF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share on SoundCloud";
+			productName = MacOSXAbletonSharing;
+			productReference = F63F1B7E148E1FD4005459BF /* Share on SoundCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63F1B75148E1FD3005459BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "SoundCloud Ltd.";
+			};
+			buildConfigurationList = F63F1B78148E1FD3005459BF /* Build configuration list for PBXProject "ShareOnSoundCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F63F1B73148E1FD3005459BF;
+			productRefGroup = F63F1B7F148E1FD4005459BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F63F1B7D148E1FD4005459BF /* Share on SoundCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F63F1B7C148E1FD4005459BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63F1B8D148E1FD4005459BF /* InfoPlist.strings in Resources */,
+				F63F1B93148E1FD4005459BF /* Credits.rtf in Resources */,
+				F63F1B99148E1FD4005459BF /* MainMenu.xib in Resources */,
+				F6711F34149220E8002BAF85 /* SCDesktopSharingWindow.xib in Resources */,
+				F6AE2F2C14924631004E25A3 /* SCDesktopSharingUploadViewController.xib in Resources */,
+				F6786E1E14964B85005CBE68 /* default-avatar.png in Resources */,
+				F6E44FB3149A4B4E00FF454A /* sc.icns in Resources */,
+				F61D1FCB14BEFD3F0079177A /* cloud_wbg.png in Resources */,
+				F61D1FCD14BEFD3F0079177A /* service_facebook_profile_inactive.png in Resources */,
+				F61D1FCE14BEFD3F0079177A /* service_facebook_profile.png in Resources */,
+				F61D1FD014BEFD3F0079177A /* service_tumblr.png in Resources */,
+				F61D1FD114BEFD3F0079177A /* service_twitter_inactive.png in Resources */,
+				F61D1FD214BEFD3F0079177A /* service_twitter.png in Resources */,
+				F61D1FD514BEFD8D0079177A /* service_tumblr_inactive.png in Resources */,
+				F61D1FD814BEFDF20079177A /* service_facebook_page_inactive.png in Resources */,
+				F61D1FD914BEFDF20079177A /* service_facebook_page.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F63F1B7A148E1FD4005459BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63F1B8F148E1FD4005459BF /* main.m in Sources */,
+				F63F1B96148E1FD4005459BF /* AppDelegate.m in Sources */,
+				F6506E191490B6B600AC26AC /* SCDesktopSharingWindowController.m in Sources */,
+				F6716FF8149226FE00121D02 /* SCDesktopSharingLoginViewController.m in Sources */,
+				F6AE2F2B14924631004E25A3 /* SCDesktopSharingUploadViewController.m in Sources */,
+				5400967314976D2A009036D0 /* SCDesktopSharingSegmentedControl.m in Sources */,
+				5400967914978936009036D0 /* NSColor+Hex.m in Sources */,
+				F6E44F81149A15CE00FF454A /* SCDesktopSharingClickableImageView.m in Sources */,
+				F6269B69149A528D0079BA5E /* SCDesktopSharingAvatarImageView.m in Sources */,
+				F6B9A01B149B892F007394FC /* PMProgressIndicator.m in Sources */,
+				F6B9A020149B8BF1007394FC /* PMProgressIndicatorController.m in Sources */,
+				F60E0AB714A0E3E2008BECC2 /* SCDesktopSharingLinkStyleButton.m in Sources */,
+				F65661DB14B5EE040011603E /* NSData+SC.m in Sources */,
+				F6F3ADB914C469E9004C80D8 /* IGIsolatedCookieWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F63F1B8B148E1FD4005459BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B8C148E1FD4005459BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F63F1B91148E1FD4005459BF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B92148E1FD4005459BF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F63F1B97148E1FD4005459BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F63F1B98148E1FD4005459BF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F6711F36149220E8002BAF85 /* SCDesktopSharingWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6711F35149220E8002BAF85 /* en */,
+			);
+			name = SCDesktopSharingWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F63F1B9A148E1FD4005459BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		F63F1B9B148E1FD4005459BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		F63F1B9D148E1FD4005459BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCDesktopSharingKit/ShareOnSoundCloud-Prefix.pch";
+				INFOPLIST_FILE = "SCDesktopSharingKit/ShareToSoundCloud-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Share on SoundCloud";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F63F1B9E148E1FD4005459BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCDesktopSharingKit/ShareOnSoundCloud-Prefix.pch";
+				INFOPLIST_FILE = "SCDesktopSharingKit/ShareToSoundCloud-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Share on SoundCloud";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F63F1B78148E1FD3005459BF /* Build configuration list for PBXProject "ShareOnSoundCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63F1B9A148E1FD4005459BF /* Debug */,
+				F63F1B9B148E1FD4005459BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F63F1B9C148E1FD4005459BF /* Build configuration list for PBXNativeTarget "Share on SoundCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F63F1B9D148E1FD4005459BF /* Debug */,
+				F63F1B9E148E1FD4005459BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63F1B75148E1FD3005459BF /* Project object */;
+}
