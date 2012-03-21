@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>AppConstants.h</title>
+  <link rel="stylesheet" href="http://jashkenas.github.com/docco/resources/docco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div id="jump_to">
+    Jump To &hellip;
+    <div id="jump_wrapper">
+      <div id="jump_page">
+          <a class="source" href="AppConstants.html">AppConstants.h</a>
+          <a class="source" href="AppDelegate.html">AppDelegate.h</a>
+          <a class="source" href="IGIsolatedCookieWebView.html">IGIsolatedCookieWebView.h</a>
+          <a class="source" href="NSColor+Hex.html">NSColor+Hex.h</a>
+          <a class="source" href="NSData+SC.html">NSData+SC.h</a>
+          <a class="source" href="PMProgressIndicator.html">PMProgressIndicator.h</a>
+          <a class="source" href="PMProgressIndicatorController.html">PMProgressIndicatorController.h</a>
+          <a class="source" href="SCDesktopSharingAvatarImageView.html">SCDesktopSharingAvatarImageView.h</a>
+          <a class="source" href="SCDesktopSharingClickableImageView.html">SCDesktopSharingClickableImageView.h</a>
+          <a class="source" href="SCDesktopSharingLinkStyleButton.html">SCDesktopSharingLinkStyleButton.h</a>
+          <a class="source" href="SCDesktopSharingLoginViewController.html">SCDesktopSharingLoginViewController.h</a>
+          <a class="source" href="SCDesktopSharingLoginViewControllerDelegate.html">SCDesktopSharingLoginViewControllerDelegate.h</a>
+          <a class="source" href="SCDesktopSharingSegmentedControl.html">SCDesktopSharingSegmentedControl.h</a>
+          <a class="source" href="SCDesktopSharingUploadViewController.html">SCDesktopSharingUploadViewController.h</a>
+          <a class="source" href="SCDesktopSharingUploadViewControllerDelegate.html">SCDesktopSharingUploadViewControllerDelegate.h</a>
+          <a class="source" href="SCDesktopSharingWindowController.html">SCDesktopSharingWindowController.h</a>
+      </div>
+    </div>
+  </div>
+  <table cellspacing=0 cellpadding=0>
+  <thead>
+    <tr>
+      <th class=docs><h1>AppConstants.h</h1></th>
+      <th class=code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id='section-1'>
+      <td class=docs>
+        <div class="pilwrap">
+          <a class="pilcrow" href="#section-1">&#182;</a>
+        </div>
+        <p>AppConstants.h
+ ShareOnSoundCloud</p>
+
+<p>Created by Ullrich Schäfer on 21.03.12.
+ Copyright &copy; 2012 SoundCloud Ltd. All rights reserved.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><span class="cp">#ifndef ShareOnSoundCloud_AppConstants_h</span>
+<span class="cp">#define ShareOnSoundCloud_AppConstants_h</span></pre></div>
+      </td>
+    </tr>
+    <tr id='section-2'>
+      <td class=docs>
+        <div class="pilwrap">
+          <a class="pilcrow" href="#section-2">&#182;</a>
+        </div>
+        <ul>
+<li>Register your app on http://soundcloud.com/you/apps</li>
+<li>Update kClientID, kClientSecret &amp; kClientRedirectURI with the values you&rsquo;ve gotten while registering your app</li>
+<li>Remove the #error line :)</li>
+</ul>
+
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><span class="cp">#error ClientID &amp; ClientSecret need to be changed</span>
+
+<span class="cp">#define kClientID @&quot;xXxXxXxXxXxXxXxX&quot;</span>
+<span class="cp">#define kClientSecret @&quot;xXxXxXxXxXxXxXxX&quot;</span>
+<span class="cp">#define kClientRedirectURI @&quot;http:</span><span class="c1">//connect.soundcloud.com/desktop&quot;</span>
+
+<span class="cp">#endif</span></pre></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>

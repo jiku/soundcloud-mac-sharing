@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>AppDelegate.h</title>
+  <link rel="stylesheet" href="http://jashkenas.github.com/docco/resources/docco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div id="jump_to">
+    Jump To &hellip;
+    <div id="jump_wrapper">
+      <div id="jump_page">
+          <a class="source" href="AppConstants.html">AppConstants.h</a>
+          <a class="source" href="AppDelegate.html">AppDelegate.h</a>
+          <a class="source" href="IGIsolatedCookieWebView.html">IGIsolatedCookieWebView.h</a>
+          <a class="source" href="NSColor+Hex.html">NSColor+Hex.h</a>
+          <a class="source" href="NSData+SC.html">NSData+SC.h</a>
+          <a class="source" href="PMProgressIndicator.html">PMProgressIndicator.h</a>
+          <a class="source" href="PMProgressIndicatorController.html">PMProgressIndicatorController.h</a>
+          <a class="source" href="SCDesktopSharingAvatarImageView.html">SCDesktopSharingAvatarImageView.h</a>
+          <a class="source" href="SCDesktopSharingClickableImageView.html">SCDesktopSharingClickableImageView.h</a>
+          <a class="source" href="SCDesktopSharingLinkStyleButton.html">SCDesktopSharingLinkStyleButton.h</a>
+          <a class="source" href="SCDesktopSharingLoginViewController.html">SCDesktopSharingLoginViewController.h</a>
+          <a class="source" href="SCDesktopSharingLoginViewControllerDelegate.html">SCDesktopSharingLoginViewControllerDelegate.h</a>
+          <a class="source" href="SCDesktopSharingSegmentedControl.html">SCDesktopSharingSegmentedControl.h</a>
+          <a class="source" href="SCDesktopSharingUploadViewController.html">SCDesktopSharingUploadViewController.h</a>
+          <a class="source" href="SCDesktopSharingUploadViewControllerDelegate.html">SCDesktopSharingUploadViewControllerDelegate.h</a>
+          <a class="source" href="SCDesktopSharingWindowController.html">SCDesktopSharingWindowController.h</a>
+      </div>
+    </div>
+  </div>
+  <table cellspacing=0 cellpadding=0>
+  <thead>
+    <tr>
+      <th class=docs><h1>AppDelegate.h</h1></th>
+      <th class=code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id='section-1'>
+      <td class=docs>
+        <div class="pilwrap">
+          <a class="pilcrow" href="#section-1">&#182;</a>
+        </div>
+        <p>AppDelegate.h
+ SoundCloud Desktop Sharing Kit</p>
+
+<p>Created by Tobias Kräntzer on 06.12.11.
+ Copyright &copy; 2011 SoundCloud Ltd. All rights reserved.</p>
+
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><span class="cp">#import &lt;Cocoa/Cocoa.h&gt;</span>
+<span class="cp">#import &lt;WebKit/WebKit.h&gt;</span>
+
+<span class="cp">#import &quot;SCDesktopSharingWindowController.h&quot;</span>
+
+<span class="err">@</span><span class="n">interface</span> <span class="n">AppDelegate</span> <span class="o">:</span> <span class="n">NSObject</span> <span class="o">&lt;</span><span class="n">NSApplicationDelegate</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="n">SCDesktopSharingWindowController</span> <span class="o">*</span><span class="n">sharingWindow</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">SCDesktopSharingWindowController</span> <span class="o">*</span><span class="n">sharingWindow</span><span class="p">;</span>
+
+<span class="o">-</span> <span class="p">(</span><span class="n">IBAction</span><span class="p">)</span><span class="n">showHelp</span><span class="o">:</span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">sender</span><span class="p">;</span>
+
+<span class="err">@</span><span class="n">end</span></pre></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
