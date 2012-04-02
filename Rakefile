@@ -1,18 +1,36 @@
 require 'rake/clean'
+require 'fileutils'
+require 'mustache'
+require 'redcarpet'
+
 
 source = "SCDesktopSharingKit/SCDesktopSharingKit/"
 destination = 'docs/'
-files = ['AppConstants.h', 'AppDelegate.h']
+files = ['AppConstants.h']
 
 
-# DOCS WITH ROCCO ============================================================
+# HELPERS ====================================================================
+
+def render_markdown(source, destination)
+  puts "rake_md: #{source} -> #{destination}"
+
+  html = Redcarpet.new(File.read(source), :smart).to_html
+  # We're using a Docco like template for the Readme
+  html = Mustache.render(File.read('Readme.mustache'), docs: html)
+
+  FileUtils.mkdir_p File.dirname(destination)
+  File.open(destination, 'wb') { |fd| fd.write(html) }
+end
+
+
+# DOCS WITH ROCCO HELPER =====================================================
 
 # Require rocco, else 
 begin
-    require 'rocco/tasks'
-    Rocco::make destination, "#{source}**/*.h"
-  rescue LoadError
-    abort "#$! -- is the rocco gem installed?"
+  require 'rocco/tasks'
+  Rocco::make destination, "#{source}**/*.h"
+rescue LoadError
+  abort "#$! -- is the rocco gem installed?"
 end
 
 # Build the list of files to generate
@@ -23,12 +41,19 @@ files.each do |source_file|
   docs_to_build << dest_file
 end
 
-desc 'Build rocco docs'
-task :docs => docs_to_build
+
+# DOCS TASK ==================================================================
+
+desc 'Build docs using rocco'
+task :docs => docs_to_build do
+  render_markdown('Readme.md', 'docs/index.html')
+end
+CLEAN.include "docs/index.html" if defined? CLEAN
 
 
-# GITHUB PAGES ===============================================================
+# GITHUB PAGES TASK ==========================================================
 
+# Note: (Ullrich) 02/04/2012: This is stolen from the rocco Rakefile itself
 desc 'Update gh-pages branch'
 task :pages => [:gp_pages_branch, 'docs/.git', :docs] do
   rev = `git rev-parse --short HEAD`.strip
@@ -54,3 +79,4 @@ file 'docs/.git' => ['docs/', '.git/refs/heads/gh-pages'] do |f|
   sh "cd docs && git fetch -q o && git reset -q --hard o/gh-pages && touch ."
 end
 CLOBBER.include 'docs/.git'
+
