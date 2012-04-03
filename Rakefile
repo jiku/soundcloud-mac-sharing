@@ -14,7 +14,7 @@ files = ['AppConstants.h']
 def render_markdown(source, destination)
   puts "rake_md: #{source} -> #{destination}"
 
-  html = Redcarpet.new(File.read(source), :smart).to_html
+  html = Redcarpet.new(File.read(source)).to_html
   # We're using a Docco like template for the Readme
   html = Mustache.render(File.read('Readme.mustache'), docs: html)
 
