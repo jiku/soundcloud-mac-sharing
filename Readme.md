@@ -3,7 +3,7 @@
 
 ## Intro
 
-The Desktop Sharing Kit comes as a separate application that your application to which your application can hand over an audio file.
+The Desktop Sharing Kit comes as a separate application that your application to which your application can hand over an audio file. You can find [it on GitHub](https://github.com/soundcloud/macOSXDesktopSharing).
 
 
 ## How To
@@ -90,4 +90,4 @@ Here's a short example how you could call the app from within your code.
 
 ### Support
 
-You're very welcome to fork this project and send us pull requests. Also if you're running into issues feel free to post a question on [StackOverflow](http://stackoverflow.com/tags/soundcloud).
+You're very welcome to fork this project and send us pull requests. Also if you're running into issues feel free to post a question on [StackOverflow](http://stackoverflow.com/tags/soundcloud) using the SoundCloud tag.
