@@ -12,6 +12,23 @@
     min-width: 845px;
     max-width: 845px;
   }
+  img {
+    margin-left: 20px;
+    border: solid 1px #F5F5FF;
+    max-width: 66%;
+  }
+  pre {
+    overflow-y:scroll;
+    overflow-x:auto;
+    background: ghostWhite;
+    border: 1px solid #DEDEDE;
+    padding: 0 0.2em;
+  }
+  ul li code {
+    background: ghostWhite;
+    border: 1px solid #DEDEDE;
+    padding: 0 0.2em;
+  }
   </style>
 </head>
 <body>
@@ -24,9 +41,100 @@
         <div class="pilwrap">
           <a class="pilcrow" href="#section-1">&#182;</a>
         </div>
-        <h1>Desktop Sharing Kit</h1>
+        <h1>SoundCloud Desktop Sharing Kit</h1>
 
-<p>See <a href="http://www.soundcloud.com">SoundCloud</a>.</p>
+<h2>Intro</h2>
+
+<p>The Desktop Sharing Kit comes as a separate application that your application to which your application can hand over an audio file.</p>
+
+<h2>How To</h2>
+
+<h3>Installation</h3>
+
+<p>A good first step is to clone the Repository of github.</p>
+
+<ul>
+<li><code>git clone &mdash;recursive git://github.com/soundcloud/MacOSXDesktopSharing.git</code></li>
+</ul>
+
+<p>Simple as that. Make sure to include the <code>&mdash;recursive</code> option to have git fetch the submodules. If you forgot the <code>&mdash;recursive</code> you can do a manual <code>git submodule update &mdash;init &mdash;recursive</code> inside the project folder.</p>
+
+<h3>Confiuguration</h3>
+
+<p>To share to SoundCloud you need to <a href="http://soundcloud.com/you/apps/new">register your app</a> witg SoundCloud.</p>
+
+<p><img src="https://img.skitch.com/20120403-duw5h9mfabxeewscqq6q2cqs1f.png" alt="Register your app" title="Register your app">
+</p>
+
+<p>While registering your app you&rsquo;ll get a client ID and secret. You also need to specify a redirect URL as in the screen shot.
+Enter those values in the <a href="SCDesktopSharingKit/SCDesktopSharingKit/AppConstants.html">AppConstants.h</a> file and remove the line that start&rsquo;s with <code>#error</code>.</p>
+
+<p>Now you can compile the App by selecting <code>Share To SoundCloud</code> as the build target and using Xcodes <em>Archive</em> feature.</p>
+
+<p><img src="https://img.skitch.com/20120403-g8pxjacb8d7subxmp7626kkbk3.png" alt="Product Archive" title="Build the app">
+</p>
+
+<h3>Bundling</h3>
+
+<p>Once you created an archive it appears in Xcodes organizer from where you can export the app using the <em>Distribute&hellip;</em> function (<em>Save Build Products</em>).</p>
+
+<p><img src="https://img.skitch.com/20120403-b6t8g2hfe1ds23iwthwru5xjrb.png" alt="Distribute via the Organizer" title="Distribute via the Organizer">
+</p>
+
+<p>In the resulting folder you&rsquo;ll find the <em>Share on SoundCloud</em> application. Take that application and embed it inside your app by draging it into your Xcode project and checking the <em>copy items into destination</em> checkbox.</p>
+
+<h3>Using</h3>
+
+<p>Once you&rsquo;ve added <em>Share on SoundCloud</em> to your application you can call it via it&rsquo;s command line interface.</p>
+
+<h4>The Command line interface</h4>
+
+<p>We use <code>open &mdash;new</code> as an easy way to open multiple instances of the same application. This way you can have multiple parallel uploads running. The arguments to the app are passed after open&rsquo;s <code>&mdash;args</code>.</p>
+
+<pre><code>open &ldquo;Share on SoundCloud.app&rdquo; &mdash;new &mdash;args \
+  -track\[asset_data\] my-song.wav \
+  -track\[artwork_asset_data\] artwork.jpg \
+  -track\[title\] &ldquo;Toast Song&rdquo;
+</code></pre>
+
+<p>The arguments you can pass into the app are:</p>
+
+<ul>
+<li><code>client_id</code>: Manually pass in a client ID if you don&rsquo;t want to store it inside the application</li>
+<li><code>client_secret</code>: The same for the client secret</li>
+<li><code>redirect_uri</code>: And the redirect URI</li>
+<li><code>track[asset_data]</code>: The path to the sound</li>
+<li><code>track[title]</code>: The title</li>
+<li><code>track[license]</code>: The license</li>
+<li><code>track[tag_list]</code>: A space seperated list of tags</li>
+<li><code>track[artwork_data]</code>: The path to an artwork file</li>
+</ul>
+
+<p>There are more options you can pass in via track[&hellip;] arguments. See the complete list on the <a href="http://developers.soundcloud.com/docs/api/tracks">SoundCloud developer documentation</a>.</p>
+
+<h4>Calling the app from your Cocoa code</h4>
+
+<p>Here&rsquo;s a short example how you could call the app from within your code.</p>
+
+<pre><code>NSArray *arguments = [NSArray arrayWithObjects:
+                      @&ldquo;-track[asset_data]&rdquo;, @&ldquo;my-song.wav&rdquo;,
+                      @&ldquo;-track[artwork_asset_data]&rdquo;, @&ldquo;artwork.jpg&rdquo;,
+                      @&ldquo;-track[title]&rdquo;, @&ldquo;Toast Song&rdquo;,
+                      nil];
+
+NSError *error = nil;
+[[NSWorkspace sharedWorkspace] launchApplicationAtURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@&ldquo;Share on SoundCloud&rdquo; ofType:@&ldquo;app&rdquo;]]
+                                              options:NSWorkspaceLaunchNewInstance
+                                        configuration:[NSDictionary dictionaryWithObject:arguments forKey:NSWorkspaceLaunchConfigurationArguments]
+                                                error:&amp;error];
+if (error) {
+    NSLog(@&ldquo;Error: %@&rdquo;, error.localizedDescription);
+}
+</code></pre>
+
+<h3>Support</h3>
+
+<p>You&rsquo;re very welcome to fork this project and send us pull requests. Also if you&rsquo;re running into issues feel free to post a question on <a href="http://stackoverflow.com/tags/soundcloud">StackOverflow</a>.</p>
 
       </td>
     </tr>
