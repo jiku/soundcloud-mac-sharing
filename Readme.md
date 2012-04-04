@@ -3,7 +3,7 @@
 
 ## Intro
 
-The Desktop Sharing Kit comes as a separate application that your application to which your application can hand over an audio file. You can find [it on GitHub](https://github.com/soundcloud/macOSXDesktopSharing).
+The Desktop Sharing Kit comes as a separate application that your application to which your application can hand over an audio file. You can find [it on GitHub](https://github.com/soundcloud/osx-sharing).
 
 
 ## How To
@@ -12,7 +12,7 @@ The Desktop Sharing Kit comes as a separate application that your application to
 
 A good first step is to clone the Repository of github.
 
-  - `git clone --recursive git://github.com/soundcloud/MacOSXDesktopSharing.git`
+  - `git clone --recursive git://github.com/soundcloud/osx-sharing.git`
 
 Simple as that. Make sure to include the `--recursive` option to have git fetch the submodules. If you forgot the `--recursive` you can do a manual `git submodule update --init --recursive` inside the project folder.
 
