@@ -51,7 +51,7 @@ The arguments you can pass into the app are:
 * ``track[tag_list]``: A space seperated list of tags
 * ``track[artwork_data]``: The path to an artwork file
 
-There are more options you can pass in using the track[...] arguments. See the complete list inn the [SoundCloud developer documentation](http://developers.soundcloud.com/docs/api/tracks).
+There are more options you can pass in using the track[...] arguments. See the complete list in the [SoundCloud developer documentation](http://developers.soundcloud.com/docs/api/tracks).
 
 Here's a short example how you could call the app from within your Cocoa application:
 
