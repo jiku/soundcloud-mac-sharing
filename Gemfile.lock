@@ -1,0 +1,20 @@
+GIT
+  remote: git://github.com/stigi/rocco.git
+  revision: 15308432dc5292ebc4deb360cca75af2d25ee098
+  branch: quickfixes
+  specs:
+    rocco (0.8.2)
+      mustache
+      redcarpet (~> 1.17)
+
+GEM
+  specs:
+    mustache (0.99.4)
+    redcarpet (1.17.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  redcarpet
+  rocco!
